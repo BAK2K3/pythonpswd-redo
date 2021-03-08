@@ -1,1 +1,1 @@
-web: gunicorn pythonpswd:pythonpswd.wsgi
+web: gunicorn pythonpswd.wsgi
