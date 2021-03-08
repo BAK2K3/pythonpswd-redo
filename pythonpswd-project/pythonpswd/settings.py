@@ -27,7 +27,7 @@ SECRET_KEY = 'mm0@#6%0kc+o69*4ojs)a_d_nopn=dh8e+_6y0q(%9c(ul_c+%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['hidden-cliffs-99917.herokuapp.com']
+ALLOWED_HOSTS = ['hidden-cliffs-99917.herokuapp.com', '5000-sapphire-booby-o9ztilxc.ws-eu03.gitpod.io']
 
 
 # Application definition
@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'pythonpswd.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'de0eti3335e96h',
+        'HOST': 'ec2-54-89-49-242.compute-1.amazonaws.com',
+        'PORT': '5432',
+        'USER': 'gtbpwhyfrqtghg',
+        'PASSWORD': 'dfa25d00bf43edf1561a93db1097f410b7d5f078528362069d78dc466c1ca3f9',
     }
 }
 
