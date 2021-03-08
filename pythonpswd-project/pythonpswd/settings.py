@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
-import dj_database_url
+
 from pathlib import Path
 
 
@@ -27,7 +27,7 @@ SECRET_KEY = 'mm0@#6%0kc+o69*4ojs)a_d_nopn=dh8e+_6y0q(%9c(ul_c+%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['pythonpswd.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '5000-sapphire-booby-o9ztilxc.ws-eu03.gitpod.io']
 
 
 # Application definition
@@ -76,16 +76,16 @@ WSGI_APPLICATION = 'pythonpswd.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
-    'default': dj_database_url.parse('postgres://jbzjcsmrczdajx:95fbaff63d36bdeddc836e40e9d9b4e3f8a4cc65675daefb9653f134942afc8f@ec2-54-228-9-90.eu-west-1.compute.amazonaws.com:5432/dbg166jgfvat7p')
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
+
+# DATABASES = {
+#     'default': dj_database_url.parse('postgres://jbzjcsmrczdajx:95fbaff63d36bdeddc836e40e9d9b4e3f8a4cc65675daefb9653f134942afc8f@ec2-54-228-9-90.eu-west-1.compute.amazonaws.com:5432/dbg166jgfvat7p')
+# }
 
 
 # Password validation
