@@ -27,7 +27,7 @@ SECRET_KEY = 'mm0@#6%0kc+o69*4ojs)a_d_nopn=dh8e+_6y0q(%9c(ul_c+%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '5000-sapphire-booby-o9ztilxc.ws-eu03.gitpod.io']
+ALLOWED_HOSTS = ['hidden-cliffs-99917.herokuapp.com']
 
 
 # Application definition
