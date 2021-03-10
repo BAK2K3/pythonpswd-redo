@@ -1,1 +1,1 @@
-web: gunicorn pythonpswd:app
+gunicorn pythonpswd.wsgi:application 
